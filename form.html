@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <title>Form</title>
+</head>
+<body>
+    <h1>Enter details</h1>
+    <form action="/add" method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="regno" placeholder="Registration No.">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <button><a href="/display" target="_blank">Display Data</a></button>
+    <hr>
+
+    <h2>Update data</h2>
+    <form action="/update" method="POST">
+        <input type="text" name="cname" placeholder="Current name">
+        <input type="text" name="nname" placeholder="New name">
+        <input type="text" name="nregno" placeholder="New reg no">
+        <input type="submit" value="Update">
+    </form>
+    <hr>
+
+    <h2>Delete data</h2>
+    <form action="/delete" method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="submit" value="Delete">
+    </form>
+    <hr>
+    
+</body>
+</html>
